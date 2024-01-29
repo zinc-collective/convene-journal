@@ -22,8 +22,8 @@ RSpec.describe Journal::Entry, type: :model do
     end
   end
 
-  describe "#description" do
-    it { is_expected.to validate_length_of(:description).is_at_most(300).allow_blank }
+  describe "#summary" do
+    it { is_expected.to validate_length_of(:summary).is_at_most(300).allow_blank }
   end
 
   describe "#save" do
