@@ -116,7 +116,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_014151) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "keywords", array: true
-    t.text "description"
+    t.text "summary"
     t.index ["journal_id"], name: "index_journal_entries_on_journal_id"
   end
 
